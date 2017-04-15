@@ -7,6 +7,16 @@ We aim to:
 * Increase attribution and recognition for informal contributions.
 
 ## How to get Involved
-We invite data practioners to share content and resources that are useful to their work and professional development. In their work data practioners regularly discover, create and curate content on the open web, such as tutorials, blog posts, etc. by telling us about it, we can make it more discoverable across communities. We seek editors-at-large to nominate and curate 
+We invite data practioners to share content and resources that are useful to their work and professional development. Data practioners regularly discover, create and curate content on the open web. 
+
+by telling us about it, we can make it more discoverable across communities. We seek editors-at-large to nominate and curate 
 
 ## Timeline/Stages
+
+Stage 1 - Platform dev and Editor
+
+
+## Content Types
+Lessons
+Proof-of-concept - like use cases, success stories, 
+Think Pieces
