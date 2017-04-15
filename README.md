@@ -1,6 +1,6 @@
 ## Wecome!
 
-#### Radian provides a central hub for data practitioners and learners to share and discover ideas and resources.  We aim to increase the application and recognition of informal contributions on the open web that benefit our work and professional development.
+#### Radian provides a central hub for data practitioners and learners to share and discover ideas and resources.  We want to increase the application and recognition of informal contributions on the open web that benefit our work and professional development.
 
 Currently data practitioners are siloed and have no central way to share and discover data solutions, approaches and ideas. Additionally, their informal contributions on the open web are under-discoverable and under-valued.
 
