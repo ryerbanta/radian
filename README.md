@@ -4,6 +4,8 @@
 
 Currently data practitioners are siloed and have no central way to share and discover data solutions, approaches and ideas. Additionally, their informal contributions on the open web are under-discoverable and under-valued.
 
+Maybe define who is a data practioner.
+
 We aim to:
 * Create a central hub for data practitioners and learners to share and discover good stuff.
 * Increase attribution and recognition for informal contributions.
