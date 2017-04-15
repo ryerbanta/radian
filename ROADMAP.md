@@ -1,5 +1,5 @@
 # Radian
-## Project Summary and Welcome
+## Project Mission and Summary
 
 
 ## How to get Involved
