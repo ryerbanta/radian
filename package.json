@@ -1,0 +1,26 @@
+{
+  "name": "radian",
+  "version": "1.0.0",
+  "description": "A simple WordPress theme put together by Michael Schofield for the folks at Radian Data",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelschofield/radian.git"
+  },
+  "author": "Michael Schofield",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/michaelschofield/radian/issues"
+  },
+  "homepage": "https://github.com/michaelschofield/radian#readme",
+  "devDependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "laravel-mix": "^1.4.5"
+  }
+}

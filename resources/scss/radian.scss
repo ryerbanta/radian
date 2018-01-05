@@ -1,0 +1,144 @@
+/**
+ * # We are using Bootstrap 4 (https://getbootstrap.com) as our base styles. With that exception,
+ * # any custom styles we write will adhere to naming conventions largely described in
+ * # https://cssguidelin.es. So, Bootstrap classes look .like-this, and Radian's .like__this.
+ *
+ * # TABLE OF CONTENTS
+ *
+ * - BASE
+ * - TYPOGRAPHY
+ * - LAYOUT
+ * - PRINT
+ */
+
+/**
+ * # BASE
+ * - Functions and Mixins are Sass utilities that help generate styles
+ * - that might otherwise be difficult to calculate or tedious to write.
+ * - We will set base properties like color, border-radius, font, and the like, in
+ * - Variables. Lastly, Reboot includes normalizing styles to ensure cross-browser
+ * - consistency.
+ */
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "reboot";
+
+/**
+ * # TYPOGRAPHY
+ */
+@import "type";
+
+/**
+ * # LAYOUT
+ */
+@import "grid";
+
+/**
+ * # COMPONENTS
+ */
+@import 'buttons';
+@import 'images';
+@import '_forms';
+@import 'nav';
+
+@import "utilities";
+
+/**
+ * # Tweaks
+ */
+.radian {
+  &__logo {
+    max-width: 200px;
+  }
+  &__header {
+    border-bottom: 1px solid $border-color;
+  }
+
+  &__input {
+
+    &--transparent {
+      background-color: rgba(255, 255, 255, 0.10);
+    }
+
+  }
+
+  &__team .avatar {
+    @extend .img-fluid;
+    @extend .rounded-circle;
+
+    border-color: $orange;
+    border-style: solid;
+    border-width: 2px;
+  }
+
+  /**
+   * Normally, you want to avoid using Sass's `@extend` method, because
+   * you can quickly generate poor CSS and tumble off the wagon of
+   * best practices. WordPress has some pretty complicated-to-access
+   * functions, though - needlessly (!) - so you have to weigh the inconvenience
+   * of either using `@extend` or hook into the particular WP filter and
+   * change the classes that are automatically generated. In this case, lesser
+   * of evils.
+   */
+  .tag-cloud-link {
+    @extend .btn, .btn-outline-primary, .mb-3, .mr-2, .text-lowercase;
+
+    &:before {
+      content: '# '
+    }
+  }
+
+  .text-white {
+    h1, h2, h3, h4, h5, h6 {
+      color: $white;
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 18px;
+  }
+
+  p {
+    font-weight: $font-weight-normal;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  main {
+    h1, h2, h3, h4, h5, h6, p, ol, ul, .radian__team {
+      @extend .col-md-8;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  main {
+    h1, h2, h3, h4, h5, h6, p, ol, ul, .radian__team {
+      @extend .col-lg-8;
+    }
+
+    p {
+      font-weight: $font-weight-light;
+    }
+  }
+}
+
+
+@include media-breakpoint-up(xl) {
+  main {
+    h1, h2, h3, h4, h5, h6, p, ol, ul, .radian__team {
+      @extend .col-xl-6;
+    }
+  }
+}
+
+/**
+ * # PRINT
+ */
+@import "print";
